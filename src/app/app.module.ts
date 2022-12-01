@@ -8,6 +8,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { CardComponent } from './components/card/card.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { CardlistComponent } from './components/cardlist/cardlist.component';
+import { ErrorComponent } from './components/error/error.component';
+import { AboutComponent } from './pages/about/about.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { CardlistComponent } from './components/cardlist/cardlist.component';
     HomeComponent,
     CardComponent,
     NavbarComponent,
-    CardlistComponent
+    CardlistComponent,
+    ErrorComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
