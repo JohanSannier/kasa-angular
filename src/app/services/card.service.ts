@@ -590,4 +590,13 @@ export class CardService {
   getAllCards(): card[] {
     return this.data;
   }
+
+  getCardById(id: string): card {
+    const card = this.data.find((card) => card.id === id);
+    if (card) {
+      return card;
+    } else {
+      throw new Error('Id not found');
+    }
+  }
 }

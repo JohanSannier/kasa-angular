@@ -1,4 +1,11 @@
 <div class="navbar">
   <img src="assets/logo.png" alt="Kasa" />
-  <nav><a routerLink="/">Accueil</a><a routerLink="/about">À propos</a></nav>
+  <nav>
+    <a
+      routerLink="/"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Accueil</a
+    ><a routerLink="/about" routerLinkActive="active">À propos</a>
+  </nav>
 </div>

@@ -3,10 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { ErrorComponent } from './components/error/error.component';
 import { AboutComponent } from './pages/about/about.component';
+import { CardDetailComponent } from './card-detail/card-detail.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: 'appartment/:id', component: CardDetailComponent },
   { path: 'about', component: AboutComponent },
+  { path: '', component: HomeComponent },
   { path: '**', component: ErrorComponent },
 ];
 

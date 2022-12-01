@@ -10,6 +10,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { CardlistComponent } from './components/cardlist/cardlist.component';
 import { ErrorComponent } from './components/error/error.component';
 import { AboutComponent } from './pages/about/about.component';
+import { CardDetailComponent } from './card-detail/card-detail.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AboutComponent } from './pages/about/about.component';
     NavbarComponent,
     CardlistComponent,
     ErrorComponent,
-    AboutComponent
+    AboutComponent,
+    CardDetailComponent
   ],
   imports: [
     BrowserModule,
