@@ -1,0 +1,11 @@
+@import "../../../styles.scss";
+
+.cardlist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5rem;
+  padding: 2rem;
+  background-color: $gray-bg;
+  border-radius: 10px;
+  justify-content: center;
+}

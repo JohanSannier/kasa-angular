@@ -1,17 +1,11 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { banner } from 'src/app/models/banner.model';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })
-export class HeaderComponent implements OnInit {
-  logo!: string;
-
-  @Input() imagePath: string = '';
-  @Input() text: string = '';
-
-  ngOnInit() {
-    this.logo = '../../../assets/logo.png';
-  }
+export class HeaderComponent {
+  @Input() banner!: banner;
 }

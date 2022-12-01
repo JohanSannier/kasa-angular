@@ -1,12 +1,8 @@
-<div class="navbar">
-  <img [src]="logo" alt="Kasa" />
-  <nav><a routerLink="/">Accueil</a><a routerLink="/about">À propos</a></nav>
-</div>
-
+<app-navbar></app-navbar>
 <div class="banner">
   <div class="banner-container">
-    <img [src]="imagePath" alt="" />
-    <p>{{ text }}</p>
+    <img [src]="banner.imagePath" alt="" />
+    <p *ngIf="banner.text">{{ banner.text }}</p>
   </div>
   <div class="darken"></div>
 </div>

@@ -1,29 +1,9 @@
 @import "../../../styles.scss";
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 2rem 0 3rem 0;
-
-  img {
-    width: 8rem;
-  }
-
-  nav {
-    display: flex;
-    gap: 1rem;
-
-    a {
-      color: $main-red;
-      font-weight: 600;
-    }
-  }
-}
-
 .banner {
   position: relative;
   border-radius: 25px;
+  margin-bottom: 1.5rem;
 
   .banner-container {
     max-width: 1240px;
